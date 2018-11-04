@@ -1,17 +1,27 @@
 import React from 'react'
 import Link from 'next/link'
+import { NavStyled } from './styled'
 
-const MyComponent = () => {
+const Nav = () => {
   return (
-    <div>
-      <Link href="/">
-        <a>To Home</a>
+    <NavStyled>
+      <Link href="/items">
+        <a>Items</a>
       </Link>
       <Link href="/sell">
-        <a>To sell</a>
+        <a>Sell</a>
       </Link>
-    </div>
+      <Link href="/sign-up">
+        <a>Sign Up</a>
+      </Link>
+      <Link href="/orders">
+        <a>Orders</a>
+      </Link>
+      <Link href="/account">
+        <a>Account</a>
+      </Link>
+    </NavStyled>
   )
 }
 
-export default MyComponent
+export default Nav
