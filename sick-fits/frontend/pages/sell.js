@@ -1,11 +1,9 @@
-import React from 'react'
+import CreateItem from '../components/CreateItem';
 
-const Sell = () => {
-  return (
-    <div>
-      <p>Sell!</p>
-    </div>
-  )
-}
+const Sell = props => (
+  <div>
+    <CreateItem />
+  </div>
+);
 
-export default Sell
+export default Sell;
